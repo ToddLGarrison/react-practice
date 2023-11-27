@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const name = 'Todd'
+const currentDate = new Date().getFullYear();
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
           <li>Chips</li>
           <li>Salsa</li>
         </ul>
+        <p>Copyright {currentDate}</p>
       </header>
     </div>
   );
