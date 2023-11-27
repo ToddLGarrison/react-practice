@@ -2,7 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 
 const name = 'Todd'
-const currentDate = new Date().getFullYear();
+const date = new Date();
+const year = date.getFullYear();
+const hours = date.getHours()
+let greeting = ''
+
+if (hours < 12) {
+  greeting = 'Good morning'
+} else if (hours < 18) {
+  greeting = 'Good afternoon'
+} else {
+  greeting = 'Good evening'
+}
+
 
 function App() {
   
@@ -15,7 +27,11 @@ function App() {
           <li>Chips</li>
           <li>Salsa</li>
         </ul>
-        <p>Copyright {currentDate}</p>
+        <p>Copyright {year}</p>
+      
+      <h1>{greeting}</h1>
+
+
       </header>
     </div>
   );
