@@ -1,4 +1,5 @@
 import './App.css';
+import Heading from './Heading';
 
 const name = 'Todd'
 const date = new Date();
@@ -32,7 +33,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1 className='heading' style={fontColor}>{greeting}</h1>
-        <h1>Hello {name}</h1>
+        <Heading name={name} />
         <ul>
           <li>Bacon</li>
           <li>Chips</li>
